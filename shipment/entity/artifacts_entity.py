@@ -22,3 +22,10 @@ class DataTransformationArtifacts:
 @dataclass
 class ModelTrainerArtifacts:
     trained_model_file_path: str
+    
+# Model Evaluation Artifacts
+@dataclass
+class ModelEvaluationArtifact:
+    is_model_accepted: bool
+    trained_model_path: str
+    changed_accuracy: float
